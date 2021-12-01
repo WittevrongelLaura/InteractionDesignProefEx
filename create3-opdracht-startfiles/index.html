@@ -24,12 +24,17 @@
         <form class="c-card" action="#">
           <div class="c-card__body">
             <h1 class="c-card__title">Tussentijdse evaluatie</h1>
-            <p>Dit is de opdracht voor de tussentijdse evaluatie van de module: Interaction Design & Data Visualisation</p>
-            <p>Vond je het een leuke module tot nu toe?</p>
+            <p class="c-description">Dit is de opdracht voor de tussentijdse evaluatie van de module: Interaction Design & Data Visualisation</p>
+            <p class="c-label c-label--bold">Vond je het een leuke module tot nu toe?</p>
             <ul class="o-list">
               <li>
-                <input type="radio" name="radios" id="radio1" required checked />
-                <label for="radio1"> Ja </label>
+                <input class="o-hide-accessible c-option c-option--hidden" type="radio" name="radios" id="radio1" required checked />
+                <label class="c-custom-option" for="radio1"> 
+                  <span class="c-custom-option__fake-input c-custom-option__fake-input--radio">
+                    <span class="c-custom-option__symbol"></span>
+                  </span> 
+                  Ja 
+              </label>
               </li>
               <li>
                 <input type="radio" name="radios" id="radio2" required />
@@ -40,7 +45,7 @@
                 <label for="radio3"> Absoluut </label>
               </li>
             </ul>
-            <p>Hoe zou je de module omschrijven?</p>
+            <p class="c-label c-label--bold">Hoe zou je de module omschrijven?</p>
             <ul class="o-list">
               <li>
                 <input type="checkbox" id="checkbox1" checked />
@@ -56,16 +61,16 @@
               </li>
             </ul>
             <p>
-              <label for="changes"> Wat zou je veranderen? </label>
+              <label class="c-label c-label--bold" for="changes"> Wat zou je veranderen? </label>
               <textarea name="changes" id="changes"></textarea>
             </p>
             <p>
-              <label for="name"> Wat is je naam? </label>
+              <label class="c-label c-label--bold" for="name"> Wat is je naam? </label>
               <input type="text" name="name" id="name" placeholder="Bv: Martin Loth" required />
             </p>
 
             <p>
-              <button>Verzenden</button>
+              <button class="c-button">Verzenden</button>
             </p>
           </div>
         </form>
